@@ -1,0 +1,13 @@
+.action-button {
+    height: 32px;
+    width: 124px;
+    left: 20px;
+    top: 20px;
+    border-radius: 2px;
+    padding: 4px 16px 4px 16px;
+    background-color: red;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+}
