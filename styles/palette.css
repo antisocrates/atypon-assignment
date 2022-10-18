@@ -1,0 +1,52 @@
+:root {
+    --gray-500: #242424;
+    --gray-400: #424242;
+    --gray-300: #616161;
+    --gray-200: #C7C7C7;
+    --gray-100: #D1D1D1;
+    --gray-50: #F5F5F5;
+    --white: #FFFFFF;
+    --accent: #0D79D0;
+    --yellow-500: #835C00;
+    --yellow-50: #FBF6D9;
+}
+
+.bg-gray-500 {
+    background-color: var(--gray-500);
+}
+
+.bg-gray-400 {
+    background-color: var(--gray-400);
+}
+
+.bg-gray-300 {
+    background-color: var(--gray-300);
+}
+
+.bg-gray-200 {
+    background-color: var(--gray-200);
+}
+
+.bg-gray-100 {
+    background-color: var(--gray-100);
+}
+
+.bg-gray-50 {
+    background-color: var(--gray-50);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+.bg-yellow-500 {
+    background-color: var(--yellow-500);
+}
+
+.bg-yellow-50 {
+    background-color: var(--yellow-50);
+}
