@@ -1,0 +1,61 @@
+.text-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.019em;
+    color: var(--gray-500);
+}
+
+.text-subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.006em;
+    color: var(--gray-500);
+}
+
+.text-normal {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.006em;
+    color: var(--gray-500);
+}
+
+.text-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.006em;
+    text-decoration-line: underline;
+    color: var(--gray-500);
+}
+
+.text-button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.006em;
+    color: var(--gray-500);
+}
+
+.text-overline {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--gray-500);
+}
+
+.text-caption {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--gray-500);
+}
