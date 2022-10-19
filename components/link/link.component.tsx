@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 
 export interface LinkProps {
     linkText: string;
@@ -7,6 +8,8 @@ export interface LinkProps {
 
 export const LinkComponent: React.FC<LinkProps> = ({linkText, href}) => {
     return (
-            <a href={href} className={"text-link"}>{linkText}</a>
+        <Link href={href}>
+            <a className={"text-link"}>{linkText}</a>
+        </Link>
     )
 }
