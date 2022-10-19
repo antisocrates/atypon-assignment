@@ -32,7 +32,13 @@
     line-height: 24px;
     letter-spacing: -0.006em;
     text-decoration-line: underline;
-    color: var(--gray-500);
+    text-decoration-color: transparent;
+    color: var(--accent);
+    transition: all 0.5s;
+}
+
+.text-link:focus {
+    text-decoration-color: var(--accent);
 }
 
 .text-button {

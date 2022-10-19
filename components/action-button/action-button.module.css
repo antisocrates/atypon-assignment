@@ -1,13 +1,38 @@
-.action-button {
+.actionButton {
     height: 32px;
-    width: 124px;
     left: 20px;
     top: 20px;
     border-radius: 2px;
-    padding: 4px 16px 4px 16px;
-    background-color: red;
+    padding: 4px 14px 4px 14px;
+    color: var(--gray-300);
+    background-color: var(--white);
     border: none;
     text-decoration: none;
-    text-align: center;
+    justify-content: center;
+    display: flex;
     outline: none;
+    transition: all 0.5s;
+}
+
+.actionButton:focus {
+    background-color: var(--gray-50);
+}
+
+.actionButton:active {
+    background-color: var(--gray-200);
+}
+
+.flat {
+    max-width: 125px;
+    width: 100%;
+}
+
+.flatWithIcon {
+    max-width: 148px;
+    width: 100%;
+}
+
+.iconOnly {
+    max-width: 32px;
+    width: 100%;
 }
