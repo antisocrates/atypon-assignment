@@ -1,0 +1,18 @@
+.avatar {
+    border: 2px solid var(--gray-100);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.small {
+    width: 24px;
+    height: 24px;
+}
+
+.large {
+    width: 40px;
+    height: 40px;
+}
