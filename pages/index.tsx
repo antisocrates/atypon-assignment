@@ -21,7 +21,7 @@ const Home: NextPage = () => {
                     <ActionButton buttonText={"Action Button"} buttonType={ActionButtonTypes.iconOnly} icon={<Link/>} action={() => {}}/>
 
                     <h3>Links:</h3>
-                    <LinkComponent href={"https://www.atypon.com/"} linkText={"Add description"} linkType={LinkTypes.flat}/>
+                    <LinkComponent href={"https://www.atypon.com/"} linkText={"Add description"}/>
                 </div>
             </main>
         </div>
