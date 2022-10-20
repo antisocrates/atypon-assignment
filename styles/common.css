@@ -1,5 +1,6 @@
 .default-box-shadow {
-    box-shadow: 0 0.3px 0.9px rgba(0, 0, 0, 0.07), 0 1.6px 3.6px rgba(0, 0, 0, 0.11);
+    /*box-shadow: 0 0.3px 0.9px rgba(0, 0, 0, 0.07), 0 1.6px 3.6px rgba(0, 0, 0, 0.11);*/
+    box-shadow: 0 0.3px 0.9px rgba(0, 0, 0, 0.07), 0 1.6px 3.6px rgba(0, 0, 0, 0.7);
 }
 
 .container {
@@ -8,9 +9,7 @@
     gap: 20px;
     justify-content: flex-start;
     align-items: center;
-    /*background-color: red;*/
-    margin: 0 10% 10% 10%;
-    height: 100vh;
+    margin: 0 10% 5% 10%;
 }
 
 .container > * {

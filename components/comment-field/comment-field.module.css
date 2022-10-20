@@ -1,0 +1,22 @@
+.commentField {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+    padding: 4px 16px;
+    width: 552px;
+    height: 40px;
+    background: var(--white);
+    border-radius: 2px;
+}
+
+.sendIcon{
+    margin-left: auto;
+}
+
+.sendIcon svg{
+    width: 32px;
+    height: 32px;
+    color: var(--gray-300);
+}

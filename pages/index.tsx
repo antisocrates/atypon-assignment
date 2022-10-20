@@ -7,6 +7,7 @@ import {Avatar, AvatarSizes} from "../components/avatar/avatar.component";
 import avatar2 from "../public/avatar-2.jpg";
 import {Tag} from "../components/tag/tag.component";
 import {Comment, CommentTypes} from "../components/comment/comment.component";
+import {CommentField} from "../components/comment-field/comment-field.component";
 
 const Home: NextPage = () => {
     return (
@@ -40,6 +41,9 @@ const Home: NextPage = () => {
                     <h3>Comments:</h3>
                     <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.notice}/>
                     <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.post} content={"Rotational effects in the dissociative"}/>
+
+                    <h3>CommentField:</h3>
+                    <CommentField avatar={<Avatar avatarSize={AvatarSizes.small} avatarText={"Socrates"} photoURL={avatar2}/>} placeholder={"Add a comment..."}/>
 
                 </div>
             </main>
