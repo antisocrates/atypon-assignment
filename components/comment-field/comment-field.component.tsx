@@ -12,7 +12,9 @@ export const CommentField: React.FC<CommentFieldProps> = ({avatar,placeholder}) 
         <div className={`${styles.commentField} default-box-shadow`}>
             <div>{avatar}</div>
             <input type={"text"} placeholder={placeholder} className={`${styles.commentInput} text-normal`}/>
-            <button className={styles.sendIcon} style={{fontSize: 20}}><Send/></button>
+            <button className={styles.sendIcon} onClick={() => {}}>
+                <Send/>
+            </button>
         </div>
     )
 }
