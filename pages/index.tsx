@@ -6,7 +6,7 @@ import {LinkComponent} from "../components/link/link.component";
 import {Avatar, AvatarSizes} from "../components/avatar/avatar.component";
 import avatar2 from "../public/avatar-2.jpg";
 import {Tag} from "../components/tag/tag.component";
-import {Comment} from "../components/comment/comment.component";
+import {Comment, CommentTypes} from "../components/comment/comment.component";
 
 const Home: NextPage = () => {
     return (
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
                     <Tag tagText={"In progress"}/>
 
                     <h3>Comments:</h3>
-                    <Comment/>
+                    <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.notice}/>
 
                 </div>
             </main>

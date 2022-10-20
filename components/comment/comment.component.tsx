@@ -8,7 +8,7 @@ export enum CommentTypes {
 
 export interface CommentProps {
     commentType: CommentTypes;
-    avatar: React.FC;
+    avatar: React.ReactElement;
     age: number;
     content?: string;
     user: string;
@@ -17,6 +17,8 @@ export interface CommentProps {
 export const Comment: React.FC<CommentProps> = ({commentType,avatar,age,content,user}) => {
     return (
         <div className={styles.comment}>
+            <div>{avatar}</div>
+            <div>soko</div>
 
         </div>
     )
