@@ -16,10 +16,10 @@ export interface AvatarProps {
 
 export const Avatar: React.FC<AvatarProps> = ({avatarSize, avatarText, photoURL}) => {
     return (
-        <div className={`${styles.avatar} ${avatarSize === AvatarSizes.small ? styles.small : styles.large} bg-accent fg-white`}>
+        <div className={`${styles.avatar} ${avatarSize === AvatarSizes.small ? styles.small : styles.large} bg-accent`}>
             {photoURL ?
                 <Image src={photoURL} alt={"user avatar"} className={`${styles.avatar} ${avatarSize === AvatarSizes.small ? styles.small : styles.large}`}/>
-                : avatarText[0]
+                : <span className={`${avatarSize === AvatarSizes.small ? "text-overline" : "text-subtitle"}`} style={{color: "white"}}>{avatarText[0]}</span>
             }
         </div>
         // <Image src={photoURL} alt={"user avatar"}/>
