@@ -11,8 +11,44 @@
     --yellow-50: #FBF6D9;
 }
 
+.fg-gray-500 {
+    color: var(--gray-500);
+}
+
+.fg-gray-400 {
+    color: var(--gray-400);
+}
+
+.fg-gray-300 {
+    color: var(--gray-300);
+}
+
+.fg-gray-200 {
+    color: var(--gray-200);
+}
+
+.fg-gray-100 {
+    color: var(--gray-100);
+}
+
+.fg-gray-50 {
+    color: var(--gray-50);
+}
+
 .fg-white {
     color: var(--white);
+}
+
+.fg-accent {
+    color: var(--accent);
+}
+
+.fg-yellow-500 {
+    color: var(--yellow-500);
+}
+
+.fg-yellow-50 {
+    color: var(--yellow-50);
 }
 
 .bg-gray-500 {

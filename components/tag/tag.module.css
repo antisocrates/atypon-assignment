@@ -1,0 +1,10 @@
+.tag {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 8px;
+    width: 81px;
+    height: 24px;
+    background: var(--yellow-50);
+    border-radius: 2px;
+}

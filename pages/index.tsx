@@ -5,6 +5,7 @@ import {Link} from "../components/icons";
 import {LinkComponent} from "../components/link/link.component";
 import {Avatar, AvatarSizes} from "../components/avatar/avatar.component";
 import avatar2 from "../public/avatar-2.jpg";
+import {Tag} from "../components/tag/tag.component";
 
 const Home: NextPage = () => {
     return (
@@ -31,6 +32,9 @@ const Home: NextPage = () => {
                     <Avatar avatarSize={AvatarSizes.small} avatarText={"Socrates"} photoURL={avatar2}/>
                     <Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"}/>
                     <Avatar avatarSize={AvatarSizes.small} avatarText={"Socrates"}/>
+
+                    <h3>Tags:</h3>
+                    <Tag tagText={"In progress"}/>
 
                 </div>
             </main>

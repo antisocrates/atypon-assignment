@@ -22,6 +22,5 @@ export const Avatar: React.FC<AvatarProps> = ({avatarSize, avatarText, photoURL}
                 : <span className={`${avatarSize === AvatarSizes.small ? "text-overline" : "text-subtitle"}`} style={{color: "white"}}>{avatarText[0]}</span>
             }
         </div>
-        // <Image src={photoURL} alt={"user avatar"}/>
     )
 }
