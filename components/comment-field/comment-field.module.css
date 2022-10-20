@@ -13,10 +13,25 @@
 
 .sendIcon{
     margin-left: auto;
+    outline: none;
+    border: none;
+    background: none;
 }
 
 .sendIcon svg{
     width: 32px;
     height: 32px;
     color: var(--gray-300);
+    transition: all 0.3s;
+}
+
+.sendIcon:active svg{
+    color: black;
+}
+
+.commentInput {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
 }
