@@ -11,22 +11,22 @@
     border-radius: 2px;
 }
 
-.sendIcon{
+.sendIcon {
     margin-left: auto;
     outline: none;
     border: none;
     background: none;
 }
 
-.sendIcon svg{
+.sendIcon svg {
     width: 32px;
     height: 32px;
     color: var(--gray-300);
     transition: all 0.3s;
 }
 
-.sendIcon:active svg{
-    color: black;
+.sendIcon:active svg {
+    color: var(--accent);
 }
 
 .commentInput {
