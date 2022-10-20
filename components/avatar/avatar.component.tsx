@@ -16,9 +16,9 @@ export interface AvatarProps {
 
 export const Avatar: React.FC<AvatarProps> = ({avatarSize, avatarText, photoURL}) => {
     return (
-        <div className={`${styles.avatar} ${avatarSize === AvatarSizes.small ? styles.small : styles.large}`}>
+        <div className={`${styles.avatar} ${avatarSize === AvatarSizes.small ? styles.small : styles.large} bg-accent fg-white`}>
             {photoURL ?
-                <Image src={photoURL} alt={"user avatar"} className={styles.large}/>
+                <Image src={photoURL} alt={"user avatar"} className={`${styles.avatar} ${avatarSize === AvatarSizes.small ? styles.small : styles.large}`}/>
                 : avatarText[0]
             }
         </div>

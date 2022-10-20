@@ -1,6 +1,7 @@
 {
   "name": "assignment",
   "version": "0.1.0",
+  "author": "Sokratis Tzagiousis",
   "private": true,
   "scripts": {
     "dev": "next dev",
