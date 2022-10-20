@@ -8,7 +8,7 @@ export interface TagProps {
 
 export const Tag: React.FC<TagProps> = ({tagText}) => {
     return (
-        <div className={`${styles.tag} text-overline`}>
+        <div className={`${styles.tag} text-overline fg-yellow-500`}>
             {tagText}
         </div>
     )

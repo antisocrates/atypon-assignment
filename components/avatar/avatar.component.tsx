@@ -19,7 +19,7 @@ export const Avatar: React.FC<AvatarProps> = ({avatarSize, avatarText, photoURL}
         <div className={`${styles.avatar} ${avatarSize === AvatarSizes.small ? styles.small : styles.large} bg-accent`}>
             {photoURL ?
                 <Image src={photoURL} alt={"user avatar"} className={`${styles.avatar} ${avatarSize === AvatarSizes.small ? styles.small : styles.large}`}/>
-                : <span className={`${avatarSize === AvatarSizes.small ? "text-overline" : "text-subtitle"}`} style={{color: "white"}}>{avatarText[0]}</span>
+                : <span className={`${avatarSize === AvatarSizes.small ? "text-overline" : "text-subtitle"} fg-white`}>{avatarText[0]}</span>
             }
         </div>
     )

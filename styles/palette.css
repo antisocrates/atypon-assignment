@@ -12,81 +12,81 @@
 }
 
 .fg-gray-500 {
-    color: var(--gray-500);
+    color: var(--gray-500) !important;
 }
 
 .fg-gray-400 {
-    color: var(--gray-400);
+    color: var(--gray-400) !important;
 }
 
 .fg-gray-300 {
-    color: var(--gray-300);
+    color: var(--gray-300) !important;
 }
 
 .fg-gray-200 {
-    color: var(--gray-200);
+    color: var(--gray-200) !important;
 }
 
 .fg-gray-100 {
-    color: var(--gray-100);
+    color: var(--gray-100) !important;
 }
 
 .fg-gray-50 {
-    color: var(--gray-50);
+    color: var(--gray-50) !important;
 }
 
 .fg-white {
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 .fg-accent {
-    color: var(--accent);
+    color: var(--accent) !important;
 }
 
 .fg-yellow-500 {
-    color: var(--yellow-500);
+    color: var(--yellow-500) !important;
 }
 
 .fg-yellow-50 {
-    color: var(--yellow-50);
+    color: var(--yellow-50) !important;
 }
 
 .bg-gray-500 {
-    background-color: var(--gray-500);
+    background-color: var(--gray-500) !important;
 }
 
 .bg-gray-400 {
-    background-color: var(--gray-400);
+    background-color: var(--gray-400) !important;
 }
 
 .bg-gray-300 {
-    background-color: var(--gray-300);
+    background-color: var(--gray-300) !important;
 }
 
 .bg-gray-200 {
-    background-color: var(--gray-200);
+    background-color: var(--gray-200) !important;
 }
 
 .bg-gray-100 {
-    background-color: var(--gray-100);
+    background-color: var(--gray-100) !important;
 }
 
 .bg-gray-50 {
-    background-color: var(--gray-50);
+    background-color: var(--gray-50) !important;
 }
 
 .bg-white {
-    background-color: var(--white);
+    background-color: var(--white) !important;
 }
 
 .bg-accent {
-    background-color: var(--accent);
+    background-color: var(--accent) !important;
 }
 
 .bg-yellow-500 {
-    background-color: var(--yellow-500);
+    background-color: var(--yellow-500) !important;
 }
 
 .bg-yellow-50 {
-    background-color: var(--yellow-50);
+    background-color: var(--yellow-50) !important;
 }
