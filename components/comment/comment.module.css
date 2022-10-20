@@ -5,3 +5,19 @@
     justify-content: center;
     align-items: center;
 }
+
+.commentRow {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.commentCol {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: flex-start;
+}

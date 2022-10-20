@@ -18,8 +18,17 @@ export const Comment: React.FC<CommentProps> = ({commentType,avatar,age,content,
     return (
         <div className={styles.comment}>
             <div>{avatar}</div>
-            <div>soko</div>
-
+            <div className={styles.commentCol}>
+                <div className={styles.commentRow}>
+                    {commentType === CommentTypes.notice ?
+                        <div className={"text-subtitle"}>{user} created this task</div>
+                        :
+                        <div className={"text-overline"}>{user}</div>
+                    }
+                    <div className={"text-caption"}>{age} days ago</div>
+                </div>
+                <div className={"text-normal"}>{content}</div>
+            </div>
         </div>
     )
 }
