@@ -3,7 +3,7 @@
     left: 20px;
     top: 20px;
     border-radius: 2px;
-    padding: 4px 14px 4px 14px;
+    padding: 4px 12px 4px 12px;
     color: var(--gray-300);
     background-color: var(--white);
     border: none;
@@ -23,12 +23,12 @@
 }
 
 .flat {
-    max-width: 125px;
+    max-width: 124px;
     width: 100%;
 }
 
 .flatWithIcon {
-    max-width: 148px;
+    max-width: 144px;
     width: 100%;
 }
 
