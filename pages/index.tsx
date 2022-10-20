@@ -1,7 +1,7 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
 import {ActionButton, ActionButtonTypes} from "../components/action-button/action-button.component";
-import {Link} from "../components/icons";
+import {Link, Send, Copy, Close, Delete} from "../components/icons";
 import {LinkComponent} from "../components/link/link.component";
 import {Avatar, AvatarSizes} from "../components/avatar/avatar.component";
 import avatar2 from "../public/avatar-2.jpg";
@@ -44,6 +44,13 @@ const Home: NextPage = () => {
 
                     <h3>CommentField:</h3>
                     <CommentField avatar={<Avatar avatarSize={AvatarSizes.small} avatarText={"Socrates"} photoURL={avatar2}/>} placeholder={"Add a comment..."}/>
+
+                    <h3>Icons:</h3>
+                    <div className={"icon"}><Link/></div>
+                    <div className={"icon"}><Close/></div>
+                    <div className={"icon"}><Copy/></div>
+                    <div className={"icon"}><Delete/></div>
+                    <div className={"icon"}><Send/></div>
 
                 </div>
             </main>

@@ -1,6 +1,5 @@
 .default-box-shadow {
-    /*box-shadow: 0 0.3px 0.9px rgba(0, 0, 0, 0.07), 0 1.6px 3.6px rgba(0, 0, 0, 0.11);*/
-    box-shadow: 0 0.3px 0.9px rgba(0, 0, 0, 0.07), 0 1.6px 3.6px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0.3px 0.9px rgba(0, 0, 0, 0.07), 0 1.6px 3.6px rgba(0, 0, 0, 0.11);
 }
 
 .container {
@@ -14,4 +13,21 @@
 
 .container > * {
     flex: 1 0 auto;
+}
+
+.icon {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.icon svg {
+    width: 32px;
+    height: 32px;
+    color: var(--gray-300);
+    transition: all 0.3s;
+}
+
+.icon:active svg {
+    color: var(--accent);
 }
