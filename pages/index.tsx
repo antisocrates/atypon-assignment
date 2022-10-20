@@ -6,6 +6,7 @@ import {LinkComponent} from "../components/link/link.component";
 import {Avatar, AvatarSizes} from "../components/avatar/avatar.component";
 import avatar2 from "../public/avatar-2.jpg";
 import {Tag} from "../components/tag/tag.component";
+import {Comment} from "../components/comment/comment.component";
 
 const Home: NextPage = () => {
     return (
@@ -35,6 +36,9 @@ const Home: NextPage = () => {
 
                     <h3>Tags:</h3>
                     <Tag tagText={"In progress"}/>
+
+                    <h3>Comments:</h3>
+                    <Comment/>
 
                 </div>
             </main>
