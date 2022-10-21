@@ -2,6 +2,10 @@ import React from 'react';
 import styles from './modal-card.module.css';
 import {ActionButton, ActionButtonTypes} from "../action-button/action-button.component";
 import {Close, Copy, Delete, Link} from "../icons";
+import {Avatar, AvatarSizes} from "../avatar/avatar.component";
+import avatar1 from "../../public/avatar-1.jpg";
+import avatar2 from "../../public/avatar-2.jpg";
+import {Tag} from "../tag/tag.component";
 
 export interface ModalCardProps {
     avatar: React.ReactNode;
@@ -24,11 +28,24 @@ export const ModalCard: React.FC<ModalCardProps> = ({avatar,placeholder}) => {
                 <h1 className={"text-title"}>Content Prep</h1>
                 <div className={styles.modalGrid}>
                     <div className={"text-normal fg-gray-300"}>Assignee</div>
-                    <div>1</div>
+                    <div className={styles.flexRow} style={{gap: "16px"}}>
+                        <div className={styles.flexRow}>
+                            <i><Avatar avatarSize={AvatarSizes.small} avatarText={"Curtis"} photoURL={avatar1}/></i>
+                            <span className={"text-normal"}>Giana R. Curtis</span>
+                        </div>
+                        <div className={styles.flexRow}>
+                            <i><Avatar avatarSize={AvatarSizes.small} avatarText={"Ping"} photoURL={avatar2}/></i>
+                            <span className={"text-normal"}>Liu Jin Ping</span>
+                        </div>
+                    </div>
                     <div className={"text-normal fg-gray-300"}>Status</div>
-                    <div>2</div>
+                    <div>
+                        <Tag tagText={"In progress"}/>
+                    </div>
                     <div className={"text-normal fg-gray-300"}>Due date</div>
-                    <div>3</div>
+                    <div>
+                        <span className={"text-normal"}>14 Dec 2022</span>
+                    </div>
                     <div className={"text-normal fg-gray-300"}>Created by</div>
                     <div>4</div>
                     <div className={"text-normal fg-gray-300"}>Description</div>
