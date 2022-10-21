@@ -17,19 +17,19 @@ export interface ModalCardProps {
 
 export const ModalCard: React.FC<ModalCardProps> = ({avatar,placeholder}) => {
     return (
-        <div className={`${styles.modalCard} default-box-shadow`}>
+        <div className={`${styles.modalCard} default-box-shadow`} role={"dialog"} aria-labelledby={"assignmentModalLabel"}>
             <div className={styles.modalCardTop}>
                 <div className={styles.modalButtonGroup}>
                     <ActionButton buttonText={"Copy Link"} buttonType={ActionButtonTypes.flatWithIcon} icon={<Link/>} action={() => {}}/>
                     <ActionButton buttonText={"Duplicate"} buttonType={ActionButtonTypes.flatWithIcon} icon={<Copy/>} action={() => {}}/>
                     <ActionButton buttonText={"Delete"} buttonType={ActionButtonTypes.flatWithIcon} icon={<Delete/>} action={() => {}}/>
 
-                    <i style={{marginLeft: "auto"}}>
+                    <i style={{marginLeft: "auto"}} aria-label={"Close"}>
                         <ActionButton buttonText={"Action Button"} buttonType={ActionButtonTypes.iconOnly} icon={<Close/>} action={() => {}}/>
                     </i>
                 </div>
                 <div className={styles.modalInfo}>
-                    <h1 className={"text-title"}>Content Prep</h1>
+                    <h1 className={"text-title"} aria-label={"assignmentModalLabel"}>Content Prep</h1>
                     <div className={styles.modalGrid}>
                         <div className={"text-normal fg-gray-300"}>Assignee</div>
                         <div className={styles.flexRow} style={{gap: "16px"}}>
