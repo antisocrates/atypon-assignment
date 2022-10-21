@@ -47,6 +47,12 @@
     flex: 1 0 auto;
 }
 
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .hm_hyperModalContentWrapper {
     max-width: 600px !important;
     width: 100% !important;

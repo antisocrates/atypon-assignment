@@ -115,7 +115,7 @@ const Home: NextPage = () => {
 
                 <section>
                     <h3 style={{textAlign: "center"}}>Comments:</h3>
-                    <div className={"flex-row"}>
+                    <div className={"flex-col"}>
                         <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} ageType={AgeTypes.day} commentType={CommentTypes.notice}/>
                         <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={5} ageType={AgeTypes.hour} commentType={CommentTypes.notice}/>
                         <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={1} ageType={AgeTypes.month} commentType={CommentTypes.post} content={"Rotational effects in the dissociative"}/>
