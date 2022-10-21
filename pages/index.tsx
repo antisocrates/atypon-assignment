@@ -4,11 +4,13 @@ import {ActionButton, ActionButtonTypes} from "../components/action-button/actio
 import {Close, Copy, Delete, Link, Send} from "../components/icons";
 import {LinkComponent} from "../components/link/link.component";
 import {Avatar, AvatarSizes} from "../components/avatar/avatar.component";
-import avatar2 from "../public/avatar-2.jpg";
 import {Tag} from "../components/tag/tag.component";
 import {AgeTypes, Comment, CommentTypes} from "../components/comment/comment.component";
 import {CommentField} from "../components/comment-field/comment-field.component";
 import {ModalCard} from "../components/modal-card/modal-card.component";
+import React from "react";
+import avatar1 from "../public/avatar-1.jpg";
+import avatar2 from "../public/avatar-2.jpg";
 
 const Home: NextPage = () => {
     return (
@@ -21,7 +23,14 @@ const Home: NextPage = () => {
             <main className={"container"}>
                 <h2 style={{textAlign: "center"}}>Click Button below to launch Modal:</h2>
 
-                <ModalCard/>
+                <ModalCard dueDate={"14 Dec 2022"}
+                           status={"In progress"}
+                           createdBy={<Comment avatar={<Avatar avatarSize={AvatarSizes.small} avatarText={"Jaydon Donin"}/>} user={"Jaydon Donin"} age={2} ageType={AgeTypes.day} commentType={CommentTypes.status}/>}
+                           assignees={[
+                               {avatar: <Avatar avatarSize={AvatarSizes.small} avatarText={"Curtis"} photoURL={avatar1}/>, name: "Giana R. Curtis"},
+                               {avatar: <Avatar avatarSize={AvatarSizes.small} avatarText={"Ping"} photoURL={avatar2}/>, name: "Liu Jin Ping"},
+                           ]}
+                />
 
                 <h2 style={{textAlign: "center"}}>Components Showcase:</h2>
 

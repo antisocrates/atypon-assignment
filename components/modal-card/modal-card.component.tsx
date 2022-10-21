@@ -3,19 +3,25 @@ import styles from './modal-card.module.css';
 import {ActionButton, ActionButtonTypes} from "../action-button/action-button.component";
 import {Close, Copy, Delete, Link} from "../icons";
 import {Avatar, AvatarSizes} from "../avatar/avatar.component";
-import avatar1 from "../../public/avatar-1.jpg";
 import avatar2 from "../../public/avatar-2.jpg";
 import {Tag} from "../tag/tag.component";
 import {AgeTypes, Comment, CommentTypes} from "../comment/comment.component";
 import {LinkComponent} from "../link/link.component";
 import {CommentField} from "../comment-field/comment-field.component";
 
-export interface ModalCardProps {
+export interface IAssignees {
     avatar: React.ReactNode;
-    placeholder: string;
+    name: string;
 }
 
-export const ModalCard: React.FC<ModalCardProps> = ({avatar,placeholder}) => {
+export interface ModalCardProps {
+    dueDate: string;
+    createdBy: React.ReactNode;
+    status: string;
+    assignees: IAssignees[];
+}
+
+export const ModalCard: React.FC<ModalCardProps> = ({dueDate,createdBy,status,assignees}) => {
     return (
         <div className={`${styles.modalCard} default-box-shadow`} role={"dialog"} aria-labelledby={"assignmentModalLabel"}>
             <div className={styles.modalCardTop}>
@@ -33,26 +39,24 @@ export const ModalCard: React.FC<ModalCardProps> = ({avatar,placeholder}) => {
                     <div className={styles.modalGrid}>
                         <div className={"text-normal fg-gray-300"}>Assignee</div>
                         <div className={styles.flexRow} style={{gap: "16px"}}>
-                            <div className={styles.flexRow}>
-                                <i><Avatar avatarSize={AvatarSizes.small} avatarText={"Curtis"} photoURL={avatar1}/></i>
-                                <span className={"text-normal"}>Giana R. Curtis</span>
-                            </div>
-                            <div className={styles.flexRow}>
-                                <i><Avatar avatarSize={AvatarSizes.small} avatarText={"Ping"} photoURL={avatar2}/></i>
-                                <span className={"text-normal"}>Liu Jin Ping</span>
-                            </div>
+                            {assignees.map ((assignee,index) =>
+                                <div className={styles.flexRow} key={index}>
+                                    <i>{assignee.avatar}</i>
+                                    <span className={"text-normal"}>{assignee.name}</span>
+                                </div>
+                            )}
                         </div>
                         <div className={"text-normal fg-gray-300"}>Status</div>
                         <div>
-                            <Tag tagText={"In progress"}/>
+                            <Tag tagText={status}/>
                         </div>
                         <div className={"text-normal fg-gray-300"}>Due date</div>
                         <div>
-                            <span className={"text-normal"}>14 Dec 2022</span>
+                            <span className={"text-normal"}>{dueDate}</span>
                         </div>
                         <div className={"text-normal fg-gray-300"}>Created by</div>
                         <div>
-                            <Comment avatar={<Avatar avatarSize={AvatarSizes.small} avatarText={"Jaydon Donin"}/>} user={"Jaydon Donin"} age={2} ageType={AgeTypes.day} commentType={CommentTypes.status}/>
+                            {createdBy}
                         </div>
                         <div className={"text-normal fg-gray-300"}>Description</div>
                         <div>
