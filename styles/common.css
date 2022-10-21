@@ -9,6 +9,7 @@
     justify-content: flex-start;
     align-items: center;
     margin: 0 10% 5% 10%;
+    min-height: 100vh;
 }
 
 .container > * {
