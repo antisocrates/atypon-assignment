@@ -1,5 +1,6 @@
 .modalCard {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: 800px;
     background: var(--white);
     border-radius: 8px;
