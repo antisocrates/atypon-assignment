@@ -3,13 +3,18 @@
     height: 800px;
     background: var(--white);
     border-radius: 8px;
-    padding: 24px;
+    padding: 16px 16px 24px 8px;
+}
+
+.modalInfo {
+    margin: 15px;
+    background: red;
 }
 
 .modalButtonGroup {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 8px;
     align-items: center;
     justify-content: start;
 }
