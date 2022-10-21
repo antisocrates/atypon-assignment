@@ -14,7 +14,7 @@
     transition: all 0.5s;
 }
 
-.actionButton:focus {
+.actionButton:hover {
     background-color: var(--gray-50);
 }
 

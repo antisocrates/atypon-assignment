@@ -1,3 +1,15 @@
 .modalCard {
+    width: 600px;
+    height: 800px;
+    background: var(--white);
+    border-radius: 8px;
+    padding: 24px;
+}
 
+.modalButtonGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: start;
 }

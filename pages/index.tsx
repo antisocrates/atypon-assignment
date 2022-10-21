@@ -8,6 +8,7 @@ import avatar2 from "../public/avatar-2.jpg";
 import {Tag} from "../components/tag/tag.component";
 import {Comment, CommentTypes} from "../components/comment/comment.component";
 import {CommentField} from "../components/comment-field/comment-field.component";
+import {ModalCard} from "../components/modal-card/modal-card.component";
 
 const Home: NextPage = () => {
     return (
@@ -17,42 +18,66 @@ const Home: NextPage = () => {
                 <meta name="description" content="Atypon's frontend engineering assignment"/>
             </Head>
 
-            <main>
-                <div className={"container"}>
-                    <h1>Components Showcase</h1>
+            <main className={"container"}>
+                <h2 style={{textAlign: "center"}}>Click Button below to launch Modal:</h2>
 
-                    <h3>Action Buttons:</h3>
-                    <ActionButton buttonText={"Action Button"} buttonType={ActionButtonTypes.flat} icon={<Link/>} action={() => {}}/>
-                    <ActionButton buttonText={"Action Button"} buttonType={ActionButtonTypes.flatWithIcon} icon={<Link/>} action={() => {}}/>
-                    <ActionButton buttonText={"Action Button"} buttonType={ActionButtonTypes.iconOnly} icon={<Link/>} action={() => {}}/>
+                <ModalCard/>
 
-                    <h3>Links:</h3>
+                <h2 style={{textAlign: "center"}}>Components Showcase:</h2>
+
+                <section>
+                    <h3 style={{textAlign: "center"}}>Action Buttons:</h3>
+                    <div className={"flex-row"}>
+                        <ActionButton buttonText={"Action Button"} buttonType={ActionButtonTypes.flat} icon={<Link/>} action={() => {}}/>
+                        <ActionButton buttonText={"Action Button"} buttonType={ActionButtonTypes.flatWithIcon} icon={<Link/>} action={() => {}}/>
+                        <ActionButton buttonText={"Action Button"} buttonType={ActionButtonTypes.iconOnly} icon={<Link/>} action={() => {}}/>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 style={{textAlign: "center"}}>Links:</h3>
                     <LinkComponent href={"https://www.atypon.com/"} linkText={"Add description"}/>
+                </section>
 
-                    <h3>Avatars:</h3>
-                    <Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>
-                    <Avatar avatarSize={AvatarSizes.small} avatarText={"Socrates"} photoURL={avatar2}/>
-                    <Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"}/>
-                    <Avatar avatarSize={AvatarSizes.small} avatarText={"Socrates"}/>
+                <section>
+                    <h3 style={{textAlign: "center"}}>Avatars:</h3>
+                    <div className={"flex-row"}>
+                        <Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>
+                        <Avatar avatarSize={AvatarSizes.small} avatarText={"Socrates"} photoURL={avatar2}/>
+                        <Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"}/>
+                        <Avatar avatarSize={AvatarSizes.small} avatarText={"Socrates"}/>
+                    </div>
+                </section>
 
-                    <h3>Tags:</h3>
+                <section>
+                    <h3 style={{textAlign: "center"}}>Tags:</h3>
                     <Tag tagText={"In progress"}/>
+                </section>
 
-                    <h3>Comments:</h3>
-                    <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.notice}/>
-                    <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.post} content={"Rotational effects in the dissociative"}/>
+                <section>
+                    <h3 style={{textAlign: "center"}}>Comments:</h3>
+                    <div className={"flex-row"}>
+                        <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.notice}/>
+                        <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.post} content={"Rotational effects in the dissociative"}/>
+                    </div>
+                </section>
 
-                    <h3>CommentField:</h3>
+                <section>
+                    <h3 style={{textAlign: "center"}}>CommentField:</h3>
                     <CommentField avatar={<Avatar avatarSize={AvatarSizes.small} avatarText={"Socrates"} photoURL={avatar2}/>} placeholder={"Add a comment..."}/>
+                </section>
 
-                    <h3>Icons:</h3>
-                    <div className={"icon"}><Link/></div>
-                    <div className={"icon"}><Close/></div>
-                    <div className={"icon"}><Copy/></div>
-                    <div className={"icon"}><Delete/></div>
-                    <div className={"icon"}><Send/></div>
+                <section>
+                    <h3 style={{textAlign: "center"}}>Icons:</h3>
+                    <div className={"flex-row"}>
+                        <i className={"icon"}><Link/></i>
+                        <i className={"icon"}><Close/></i>
+                        <i className={"icon"}><Copy/></i>
+                        <i className={"icon"}><Delete/></i>
+                        <i className={"icon"}><Send/></i>
+                    </div>
+                </section>
 
-                </div>
             </main>
         </div>
     )

@@ -1,5 +1,6 @@
 .default-box-shadow {
-    box-shadow: 0 0.3px 0.9px rgba(0, 0, 0, 0.07), 0 1.6px 3.6px rgba(0, 0, 0, 0.11);
+    /*box-shadow: 0 0.3px 0.9px rgba(0, 0, 0, 0.07), 0 1.6px 3.6px rgba(0, 0, 0, 0.11);*/
+    box-shadow: 0 0.3px 0.9px rgba(0, 0, 0, 0.07), 0 1.6px 3.6px rgba(0, 0, 0, 0.8);
 }
 
 .container {
@@ -31,4 +32,18 @@
 
 .icon:active svg {
     color: var(--accent);
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    flex: 1 0 auto;
+}
+
+.flex-row > * {
+    flex: 1 0 auto;
 }
