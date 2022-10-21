@@ -11,6 +11,7 @@ import {ModalCard} from "../components/modal-card/modal-card.component";
 import React from "react";
 import avatar1 from "../public/avatar-1.jpg";
 import avatar2 from "../public/avatar-2.jpg";
+import {ModalLaunch} from "../components/modal/modal.component";
 
 const Home: NextPage = () => {
     return (
@@ -22,6 +23,38 @@ const Home: NextPage = () => {
 
             <main className={"container"}>
                 <h2 style={{textAlign: "center"}}>Click Button below to launch Modal:</h2>
+
+                <ModalLaunch
+                    innerDiv={
+                        <ModalCard dueDate={"14 Dec 2022"}
+                                   status={"In progress"}
+                                   createdBy={<Comment avatar={<Avatar avatarSize={AvatarSizes.small} avatarText={"Jaydon Donin"}/>} user={"Jaydon Donin"} age={2} ageType={AgeTypes.day} commentType={CommentTypes.status}/>}
+                                   assignees={[
+                                       {avatar: <Avatar avatarSize={AvatarSizes.small} avatarText={"Curtis"} photoURL={avatar1}/>, name: "Giana R. Curtis"},
+                                       {avatar: <Avatar avatarSize={AvatarSizes.small} avatarText={"Ping"} photoURL={avatar2}/>, name: "Liu Jin Ping"},
+                                   ]}
+                                   commentHistory={[
+                                       {
+                                           avatar: <Avatar avatarSize={AvatarSizes.large} avatarText={"Jaydon Donin"}/>,
+                                           age: 2,
+                                           user: "Jaydon Donin",
+                                           ageType: AgeTypes.day,
+                                           commentType: CommentTypes.notice
+                                       },
+                                       {
+                                           avatar: <Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>,
+                                           user: "Liu Jin Ping",
+                                           age: 1,
+                                           ageType: AgeTypes.hour,
+                                           commentType: CommentTypes.post,
+                                           content: "Rotational effects in the dissociative"
+                                       },
+                                   ]}
+                        />
+                    }
+                />
+
+                <h3 style={{textAlign: "center"}}>Modal Card Component:</h3>
 
                 <ModalCard dueDate={"14 Dec 2022"}
                            status={"In progress"}

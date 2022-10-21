@@ -46,3 +46,15 @@
 .flex-row > * {
     flex: 1 0 auto;
 }
+
+.hm_hyperModalContentWrapper {
+    max-width: 600px !important;
+    width: 100% !important;
+    height: 800px !important;
+    overflow: hidden !important;
+}
+
+.hm_hyperCloseIcon {
+    position: absolute !important;
+    top: -10vh !important;
+}
