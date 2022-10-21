@@ -5,7 +5,7 @@ import {Close, Copy, Delete, Link} from "../icons";
 import {Avatar, AvatarSizes} from "../avatar/avatar.component";
 import avatar2 from "../../public/avatar-2.jpg";
 import {Tag} from "../tag/tag.component";
-import {AgeTypes, Comment, CommentTypes} from "../comment/comment.component";
+import {AgeTypes, Comment, CommentProps, CommentTypes} from "../comment/comment.component";
 import {LinkComponent} from "../link/link.component";
 import {CommentField} from "../comment-field/comment-field.component";
 
@@ -19,9 +19,10 @@ export interface ModalCardProps {
     createdBy: React.ReactNode;
     status: string;
     assignees: IAssignees[];
+    commentHistory?: CommentProps[];
 }
 
-export const ModalCard: React.FC<ModalCardProps> = ({dueDate,createdBy,status,assignees}) => {
+export const ModalCard: React.FC<ModalCardProps> = ({dueDate,createdBy,status,assignees,commentHistory}) => {
     return (
         <div className={`${styles.modalCard} default-box-shadow`} role={"dialog"} aria-labelledby={"assignmentModalLabel"}>
             <div className={styles.modalCardTop}>
@@ -68,8 +69,11 @@ export const ModalCard: React.FC<ModalCardProps> = ({dueDate,createdBy,status,as
 
             <div className={styles.modalCardBottom}>
                 <div className={styles.commentBox}>
-                    <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Jaydon Donin"}/>} user={"Jaydon Donin"} age={2} ageType={AgeTypes.day} commentType={CommentTypes.notice}/>
-                    <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Liu Jin Ping"} age={1} ageType={AgeTypes.hour} commentType={CommentTypes.post} content={"Rotational effects in the dissociative"}/>
+                    {commentHistory?.map((comment,index) =>
+                        <div key={index}>
+                            <Comment avatar={comment.avatar} user={comment.user} age={comment.age} ageType={comment.ageType} commentType={comment.commentType} content={comment?.content}/>
+                        </div>
+                    )}
                 </div>
                 <CommentField avatar={<Avatar avatarSize={AvatarSizes.small} avatarText={"Socrates"} photoURL={avatar2}/>} placeholder={"Add a comment..."}/>
             </div>

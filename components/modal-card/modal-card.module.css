@@ -30,7 +30,14 @@
     flex-direction: column;
     gap: 20px;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     padding-bottom: 20px;
+    height: 100%;
+}
+
+.commentBox::-webkit-scrollbar {
+    display: none;
 }
 
 .modalInfo {

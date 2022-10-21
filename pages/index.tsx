@@ -30,6 +30,23 @@ const Home: NextPage = () => {
                                {avatar: <Avatar avatarSize={AvatarSizes.small} avatarText={"Curtis"} photoURL={avatar1}/>, name: "Giana R. Curtis"},
                                {avatar: <Avatar avatarSize={AvatarSizes.small} avatarText={"Ping"} photoURL={avatar2}/>, name: "Liu Jin Ping"},
                            ]}
+                           commentHistory={[
+                               {
+                                   avatar: <Avatar avatarSize={AvatarSizes.large} avatarText={"Jaydon Donin"}/>,
+                                   age: 2,
+                                   user: "Jaydon Donin",
+                                   ageType: AgeTypes.day,
+                                   commentType: CommentTypes.notice
+                               },
+                               {
+                                   avatar: <Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>,
+                                   user: "Liu Jin Ping",
+                                   age: 1,
+                                   ageType: AgeTypes.hour,
+                                   commentType: CommentTypes.post,
+                                   content: "Rotational effects in the dissociative"
+                               },
+                           ]}
                 />
 
                 <h2 style={{textAlign: "center"}}>Components Showcase:</h2>
