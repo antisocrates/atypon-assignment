@@ -36,7 +36,7 @@ const Home: NextPage = () => {
 
                 <section>
                     <h3 style={{textAlign: "center"}}>Links:</h3>
-                    <LinkComponent href={"https://www.atypon.com/"} linkText={"Add description"}/>
+                    <LinkComponent href={"#"} linkText={"Add description"}/>
                 </section>
 
                 <section>
@@ -57,6 +57,7 @@ const Home: NextPage = () => {
                 <section>
                     <h3 style={{textAlign: "center"}}>Comments:</h3>
                     <div className={"flex-row"}>
+                        <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.notice}/>
                         <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.notice}/>
                         <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.post} content={"Rotational effects in the dissociative"}/>
                     </div>

@@ -1,5 +1,5 @@
 .avatar {
-    border: 2px solid var(--gray-100);
+    border: 1px solid var(--gray-100);
     border-radius: 100%;
     display: flex;
     justify-content: center;

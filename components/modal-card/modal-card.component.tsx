@@ -6,6 +6,8 @@ import {Avatar, AvatarSizes} from "../avatar/avatar.component";
 import avatar1 from "../../public/avatar-1.jpg";
 import avatar2 from "../../public/avatar-2.jpg";
 import {Tag} from "../tag/tag.component";
+import {Comment, CommentTypes} from "../comment/comment.component";
+import {LinkComponent} from "../link/link.component";
 
 export interface ModalCardProps {
     avatar: React.ReactNode;
@@ -47,9 +49,13 @@ export const ModalCard: React.FC<ModalCardProps> = ({avatar,placeholder}) => {
                         <span className={"text-normal"}>14 Dec 2022</span>
                     </div>
                     <div className={"text-normal fg-gray-300"}>Created by</div>
-                    <div>4</div>
+                    <div>
+                        <Comment avatar={<Avatar avatarSize={AvatarSizes.small} avatarText={"Jaydon Donin"}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.status}/>
+                    </div>
                     <div className={"text-normal fg-gray-300"}>Description</div>
-                    <div>5</div>
+                    <div>
+                        <LinkComponent href={"#"} linkText={"Add description"}/>
+                    </div>
 
 
                 </div>
