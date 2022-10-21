@@ -1,12 +1,12 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
 import {ActionButton, ActionButtonTypes} from "../components/action-button/action-button.component";
-import {Link, Send, Copy, Close, Delete} from "../components/icons";
+import {Close, Copy, Delete, Link, Send} from "../components/icons";
 import {LinkComponent} from "../components/link/link.component";
 import {Avatar, AvatarSizes} from "../components/avatar/avatar.component";
 import avatar2 from "../public/avatar-2.jpg";
 import {Tag} from "../components/tag/tag.component";
-import {Comment, CommentTypes} from "../components/comment/comment.component";
+import {AgeTypes, Comment, CommentTypes} from "../components/comment/comment.component";
 import {CommentField} from "../components/comment-field/comment-field.component";
 import {ModalCard} from "../components/modal-card/modal-card.component";
 
@@ -57,9 +57,9 @@ const Home: NextPage = () => {
                 <section>
                     <h3 style={{textAlign: "center"}}>Comments:</h3>
                     <div className={"flex-row"}>
-                        <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.notice}/>
-                        <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.notice}/>
-                        <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.post} content={"Rotational effects in the dissociative"}/>
+                        <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={2} ageType={AgeTypes.day} commentType={CommentTypes.notice}/>
+                        <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={5} ageType={AgeTypes.hour} commentType={CommentTypes.notice}/>
+                        <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Jaydon Donin"} age={1} ageType={AgeTypes.month} commentType={CommentTypes.post} content={"Rotational effects in the dissociative"}/>
                     </div>
                 </section>
 

@@ -6,7 +6,7 @@ import {Avatar, AvatarSizes} from "../avatar/avatar.component";
 import avatar1 from "../../public/avatar-1.jpg";
 import avatar2 from "../../public/avatar-2.jpg";
 import {Tag} from "../tag/tag.component";
-import {Comment, CommentTypes} from "../comment/comment.component";
+import {AgeTypes, Comment, CommentTypes} from "../comment/comment.component";
 import {LinkComponent} from "../link/link.component";
 import {CommentField} from "../comment-field/comment-field.component";
 
@@ -52,7 +52,7 @@ export const ModalCard: React.FC<ModalCardProps> = ({avatar,placeholder}) => {
                         </div>
                         <div className={"text-normal fg-gray-300"}>Created by</div>
                         <div>
-                            <Comment avatar={<Avatar avatarSize={AvatarSizes.small} avatarText={"Jaydon Donin"}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.status}/>
+                            <Comment avatar={<Avatar avatarSize={AvatarSizes.small} avatarText={"Jaydon Donin"}/>} user={"Jaydon Donin"} age={2} ageType={AgeTypes.day} commentType={CommentTypes.status}/>
                         </div>
                         <div className={"text-normal fg-gray-300"}>Description</div>
                         <div>
@@ -64,8 +64,8 @@ export const ModalCard: React.FC<ModalCardProps> = ({avatar,placeholder}) => {
 
             <div className={styles.modalCardBottom}>
                 <div className={styles.commentBox}>
-                    <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Jaydon Donin"}/>} user={"Jaydon Donin"} age={2} commentType={CommentTypes.notice}/>
-                    <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Liu Jin Ping"} age={2} commentType={CommentTypes.post} content={"Rotational effects in the dissociative"}/>
+                    <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Jaydon Donin"}/>} user={"Jaydon Donin"} age={2} ageType={AgeTypes.day} commentType={CommentTypes.notice}/>
+                    <Comment avatar={<Avatar avatarSize={AvatarSizes.large} avatarText={"Socrates"} photoURL={avatar2}/>} user={"Liu Jin Ping"} age={1} ageType={AgeTypes.hour} commentType={CommentTypes.post} content={"Rotational effects in the dissociative"}/>
                 </div>
                 <CommentField avatar={<Avatar avatarSize={AvatarSizes.small} avatarText={"Socrates"} photoURL={avatar2}/>} placeholder={"Add a comment..."}/>
             </div>
